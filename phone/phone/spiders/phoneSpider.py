@@ -21,7 +21,7 @@ class phoneSpider(Spider):
     
 	# start requests
     def start_requests(self):
-        yield SplashRequest(self.url, callback=self.parse, endpoint='execute', args={'lua_source': script, 'phone':'18768144196', 'wait': 5})
+        yield SplashRequest(self.url, callback=self.parse, endpoint='execute', args={'lua_source': script, 'phone':'159********', 'wait': 5})
     
 	# parse the html content
     def parse(self, response):
